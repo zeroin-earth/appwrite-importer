@@ -22,7 +22,7 @@ export default async (context: AppwriteContext) => {
 
   const { databaseId, fileId, bucketId, collectionId } = JSON.parse(req.body)
 
-  if (!databaseId || !fileId || !bucketId || collectionId) {
+  if (!databaseId || !fileId || !bucketId || !collectionId) {
     error(
       'Missing required parameters from body "databaseId", "fileId", "collectionId" or "bucketId"',
     )
