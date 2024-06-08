@@ -17,7 +17,7 @@ type Headers =
 
 type AppwriteRequest = {
   bodyRaw: string
-  body: Record<string, any>
+  body: string
   headers: Record<Headers, string>
   scheme: string
   method: 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH'
